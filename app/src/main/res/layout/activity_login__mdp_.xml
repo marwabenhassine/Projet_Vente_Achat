@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Mdp_Activity"
+    android:background="@drawable/arrier_plan">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/admi"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_Login"
+                android:layout_marginLeft="20dp"
+                android:hint="login"
+                android:inputType="textAutoCorrect"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verifier_login"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/input_Mdp"
+                android:layout_marginLeft="20dp"
+                android:hint="mot de passe"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verifier_mdp"
+                android:textColor="@color/colorAccent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connexion"
+                android:onClick="Button_test"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="oblier mot de passe"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:onClick="oblier_mdp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="creer un compte"
+            android:textStyle="bold"
+            android:onClick="creer_compte"
+            android:textColor="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

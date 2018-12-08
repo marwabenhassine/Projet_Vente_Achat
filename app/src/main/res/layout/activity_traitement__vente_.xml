@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arrier_plan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tous_les_champs_est_obligatoir"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="Isertion Image"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="text"
+        android:id="@+id/nom"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prenom"
+        android:id="@+id/prenom"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Num de telephone"
+        android:inputType="phone"
+        android:id="@+id/N_tel"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de produit"
+        android:inputType="text"
+        android:id="@+id/N_produit"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description de produit"
+        android:inputType="text"
+        android:id="@+id/desc_produit"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="prix"
+        android:inputType="number"
+        android:id="@+id/prix"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Enregister"
+            android:onClick="Button_Enrg_produit"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:onClick="Button_Annuler_produit"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

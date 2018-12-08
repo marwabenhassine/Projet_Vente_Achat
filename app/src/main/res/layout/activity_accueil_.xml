@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/arrier_plan">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resultat_login_mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/accueil" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Achat"
+           android:onClick="B_achat"
+           android:id="@+id/achat"/>
+
+        <Button
+            android:id="@+id/vente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Button_Vente"
+            android:text="Vente" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
